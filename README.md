@@ -12,10 +12,16 @@ The solution leverages the followung Google Cloud services:
 ** Vertex AI Training **: Servless custom jobs for model training (Scikit-learn RandomForest)
 ** Vertex AI Endpoints**: Scalable, real-time serving infrastructure (REST API).
 
-##Files
+## Files
 * Demo4_AI.ipynb: Main notebook containing Exploratory Data Analysis, Pipeline orchestration and deployment logic
 * train.py: Modularized Python script used for the remote training job on Vertex AI.
 * requirements.txt: List of project dependencies and libraries.
+
+## USAGE
+1. ** Data Preparation **: The pipeline pulls data from the public 'chicago_taxi_trips' dataset in BigQuery
+2. ** Feature Engineering & Analysis **: Exploratory analysis and data transformation directly within the notebook
+3. ** Training & Evaluation **: A RandomForest model is trained and evaluated (RMSE calculation) using scikit-learn.
+4. ** Deployment **: The trained model is uploaded to the Registry and deployed to a Vertex AI Endpoint for real-time predictions
 
 ## Results
 The model is successfully deployed and active on a Vertex AI Endpoint, achieving a baseline RMSE of 8 minutes on the test dataset
