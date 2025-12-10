@@ -30,3 +30,6 @@ The model is successfully deployed and active on a Vertex AI Endpoint, achieving
 ** Interactive Approach **: Due to the demostration nature of this assessment, the end-to-end workflow (including training) is executed interactively within the `DEMO4_AI.ipnb`
 notebook using Vertex AI Colab.
 ** Reference Script **: The `train.py` file is provided as a reference implementation for modularizing the training logic, intended for potential migration to Vertex AI Pipelines or Custom Jobs
+
+## Code Ownership
+This code is Axmos property 
